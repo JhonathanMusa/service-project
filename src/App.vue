@@ -1,7 +1,8 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <HelloWorld msg="Welcome to the first Vue app" />
   {{ book }}
+  {{ book2 }}
   {{ year }}
 </template>
 
@@ -13,6 +14,7 @@ interface Book {
   id: number;
   title: string;
 }
+
 export default defineComponent({
   name: "App",
   components: {
@@ -21,7 +23,8 @@ export default defineComponent({
   setup() {
     const year = ref<number | string>(2020);
     const book: Book = reactive({ id: 1, title: "Vue 3!" });
-    return { book, year };
+    const book2: Book = reactive({ id: 2, title: "React!" });
+    return { book, book2, year };
   },
 });
 </script>
