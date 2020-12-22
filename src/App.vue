@@ -1,33 +1,12 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to the first Vue app" />
-  {{ book }}
-  {{ book2 }}
-  {{ year }}
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
+  </div>
 </template>
-
-<script lang="ts">
-import { defineComponent, reactive, ref } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
-
-interface Book {
-  id: number;
-  title: string;
-}
-
-export default defineComponent({
-  name: "App",
-  components: {
-    HelloWorld,
-  },
-  setup() {
-    const year = ref<number | string>(2020);
-    const book: Book = reactive({ id: 1, title: "Vue 3!" });
-    const book2: Book = reactive({ id: 2, title: "React!" });
-    return { book, book2, year };
-  },
-});
-</script>
 
 <style>
 #app {
@@ -36,6 +15,18 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
