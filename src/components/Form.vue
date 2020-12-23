@@ -9,11 +9,11 @@
           v-bind:class="{ active: service.active }"
           v-bind:key="index"
         >
-          {{ service.name }} <span>{{ service.price | currency }}</span>
+          {{ service.name }} <span>{{ service.price }}</span>
         </li>
       </ul>
       <div class="total">
-        Total: <span>{{ total() | currency }}</span>
+        Total: <span>{{ total() }}</span>
       </div>
     </form>
   </div>

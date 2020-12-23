@@ -41,8 +41,8 @@ nav {
 --------------------------*/
 
 form {
-  background-color: #024959;
-  border-radius: 2px;
+  background-color: #262626;
+  border-radius: 10px;
   box-shadow: 0 1px 1px #ccc;
   width: 400px;
   padding: 35px 60px;
@@ -69,10 +69,11 @@ form ul {
 
 form ul li {
   padding: 20px 30px;
-  background-color: #D99177;
+  background-color: #F2C335;
   margin-bottom: 8px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  border-radius: 10px;
 }
 
 form ul li span {
@@ -80,7 +81,7 @@ form ul li span {
 }
 
 form ul li.active {
-  background-color: #8ec16d;
+  background-color: #9DA65D;
 }
 
 div.total {
