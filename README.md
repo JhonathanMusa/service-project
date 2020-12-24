@@ -1,2 +1,2 @@
-# vue-first-project
-First project with Vue.js
+# vue-service-project
+Service project with Vue.js
