@@ -1,2 +1,2 @@
-# vue-service-project
-Service project with Vue.js
+# service-project
+Service project build with Vue.js
