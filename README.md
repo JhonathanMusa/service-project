@@ -1,2 +1,2 @@
 # service-project
-Service project build with Vue.js
+Service project built with Vue.js
